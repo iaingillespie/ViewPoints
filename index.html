@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ViewPoints</title>
+    <!-- init bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- grid css file -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <!-- style css file -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- some google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Yanone+Kaffeesatz|Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- import Sentimood library -->
+    <script src="assets/javascript/sentimood.js"></script>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-16x16.png">
+</head>
+
+<body>
+    <!-- this div holds the grid; anything outside of this will break stuff -->
+    <div class="grid-container p-3">
+        <!-- holds map image -->
+        <div id="map-container"></div>
+        <!-- holds input -->
+        <div class="content-box">
+            <form class="m-2">
+                <div class="input-group mb-3">
+                    <input type="text" id="topicInput" class="form-control" placeholder="Topic of interest" aria-label="News Topic"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="submitButton">
+                            <img class="button-image" src="./assets/images/Logo.svg">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- contains balloon image and text logo -->
+        <div class="logo-container">
+            <img class="logo" src="assets/images/Logo.svg">
+            <div class="logo-text">ViewPoints</div>
+        </div>
+        <div class="intro-modal">
+            <img class="intro-modal-pic" src="assets/images/Logo.svg">
+            <p class="intro-modal-text">Welcome to ViewPoints, the news sentiment aggregator</p>
+            <p class="intro-modal-text">Enter a subject above to aggregate articles from around the world on your
+                topic.</p>
+            <p class="intro-modal-text">The sentiment of each country displays on the map. Click on the map or the
+                table to see the article and sentiment scores.</p>
+            <p class="intro-modal-text">Note: The averages are factored up to make the data easier to display.</p>
+        </div>
+    </div>
+    <!-- Google maps API link -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqNFzgS2GUY_xDEFsYOu44N_XQCfBNYPs&callback=initMap"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- local scripts -->
+    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/newssentiment.js"></script>
+</body>
+
+</html>
