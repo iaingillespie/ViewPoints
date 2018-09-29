@@ -1,6 +1,12 @@
 body {
-    font-family: "Open Sans", sans-serif !important;
-  }
+  font-family: 'Work Sans', sans-serif !important;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+ }
   
   .grid-container {
     background-color: white;
@@ -25,14 +31,14 @@ body {
   
   .content-box {
     position: relative;
-    background-color: rgba(195, 195, 195, 0.8);
+    background-color: rgba(205, 209, 219, 0.8);
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   }
   
   .modalWrap {
     position: relative;
-    background-color: rgba(195, 195, 195, 0.8);
+    background-color: rgba(205, 209, 219, 0.8);
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid black;
@@ -52,8 +58,8 @@ body {
     color: black;
     line-height: -1;
     letter-spacing: -2.5px;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 1px;
+    padding-top: 10px;
   }
   
   .modalBoxTop {
@@ -70,7 +76,7 @@ body {
   
   .country-table-container {
     position: relative;
-    background-color: rgba(195, 195, 195, 0.8);
+    background-color: rgba(205, 209, 219, 0.8);
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
@@ -81,7 +87,7 @@ body {
   }
   
   .countryTR:hover {
-    background: rgba(170, 170, 170, 0.8);
+    background-color: rgba(205, 209, 219, 0.8);
   }
   
   #submitButton svg {
@@ -92,6 +98,7 @@ body {
   .logo {
     height: 5rem;
     display: inline-block;
+    z-index: 100;
   }
   
   .button-image {
@@ -101,7 +108,7 @@ body {
   
   .intro-modal {
     border: 1px solid black;
-    background-color: rgba(195, 195, 195, 0.8);
+    background-color: rgba(205, 209, 219, 0.8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     z-index: 100;
   }
@@ -111,5 +118,7 @@ body {
   }
   
   .intro-modal-pic {
-    width: 100%;
+    width: 100px;
+    margin right: 20px;
+
   }
