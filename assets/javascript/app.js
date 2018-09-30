@@ -31,7 +31,7 @@ function popModal(userMapInput) {
       // console.log(scores.russia);
       if (allData.russia.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.russia.length; i++) {
           var newTableRow = $("<tr>");
@@ -70,7 +70,7 @@ function popModal(userMapInput) {
       // console.log(scores.canada);
       if (allData.canada.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.canada.length; i++) {
           var newTableRow = $("<tr>");
@@ -109,7 +109,7 @@ function popModal(userMapInput) {
       // console.log(scores.qatar);
       if (allData.qatar.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.qatar.length; i++) {
           var newTableRow = $("<tr>");
@@ -148,7 +148,7 @@ function popModal(userMapInput) {
       // console.log(scores.uk);
       if (allData.uk.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.uk.length; i++) {
           var newTableRow = $("<tr>");
@@ -187,7 +187,7 @@ function popModal(userMapInput) {
       // console.log(scores.australia);
       if (allData.australia.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.australia.length; i++) {
           var newTableRow = $("<tr>");
@@ -226,7 +226,7 @@ function popModal(userMapInput) {
       // console.log(scores.ireland);
       if (allData.ireland.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.ireland.length; i++) {
           var newTableRow = $("<tr>");
@@ -265,7 +265,7 @@ function popModal(userMapInput) {
       // console.log(scores.israel);
       if (allData.israel.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.israel.length; i++) {
           var newTableRow = $("<tr>");
@@ -304,7 +304,7 @@ function popModal(userMapInput) {
       // console.log(scores.usa);
       if (allData.usa.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.usa.length; i++) {
           var newTableRow = $("<tr>");
@@ -343,7 +343,7 @@ function popModal(userMapInput) {
       //  console.log(scores.india);
       if (allData.india.length !== 0) {
         modalTable.append(
-          "<tr><th></th><th></th><th>Sentiment Score</th><th>Summary</th></tr>"
+          "<tr><th></th><th></th><th>Sentiment Score</th><th></th></tr>"
         );
         for (var i = 0; i < allData.india.length; i++) {
           var newTableRow = $("<tr>");
@@ -442,7 +442,7 @@ function drawMapAfterAPIIngest() {
     var countryTableContainer = $("<div class='country-table-container'>");
     var countryTable = $("<table>");
     countryTable.addClass("table");
-    var countryTableHeader = $("<tr><th>Country</th><th>Score</th></tr>");
+    var countryTableHeader = $("<tr><th></th><th></th></tr>");
     var qatRow = $(
       "<tr class='countryTR' data-country='Qatar'><td>Qatar</td><td>" +
         qatSentimentScore +

@@ -139,7 +139,7 @@ $(document).ready(function() {
     var queryURL =
       "https://newsapi.org/v2/everything?q=" +
       searchString +
-      "&language=en&sortBy=relevancy&pageSize=10&sources=cbc-news&apiKey=4af9a951ffb5416f886ace6b478c449b";
+      "&language=en&sortBy=relevancy&pageSize=10&sources=bbc-news&apiKey=4af9a951ffb5416f886ace6b478c449b";
 
     $.ajax({
       url: queryURL,
@@ -198,7 +198,7 @@ $(document).ready(function() {
     var queryURL =
       "https://newsapi.org/v2/everything?q=" +
       searchString +
-      "&language=en&sortBy=relevancy&pageSize=10&sources=the-globe-and-mail&apiKey=4af9a951ffb5416f886ace6b478c449b";
+      "&language=en&sortBy=relevancy&pageSize=10&sources=cbc-news&apiKey=4af9a951ffb5416f886ace6b478c449b";
 
     $.ajax({
       url: queryURL,
